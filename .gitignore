@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+.pnp/
+.pnp.js
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/reports/ # Se você estiver usando reporters como mochawesome
+cypress/results/ # Outros resultados de teste
+
+# Build artifacts (se você tiver uma aplicação front-end no mesmo repositório)
+build/
+dist/
+
+# IDE files (VS Code)
+.vscode/
+
+# Environment variables (se você usa arquivos .env para variáveis de ambiente)
+.env
+.env.*
+
+# Operating System files
+.DS_Store # macOS
+Thumbs.db # Windows

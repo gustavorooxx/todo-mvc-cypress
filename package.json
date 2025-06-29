@@ -1,0 +1,11 @@
+{
+  "name": "todo-mvc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gustavorooxx/todo-mvc-cypress.git",
+  "author": "Gustavo Chagas",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^14.5.0"
+  }
+}
