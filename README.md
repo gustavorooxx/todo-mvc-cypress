@@ -46,7 +46,7 @@ yarn install
 Para rodar os testes Cypress, a aplicação Angular precisa estar em execução. Vamos iniciá-la na porta 8080.
 
 ```bash
-# Na pasta todomvc/examples/angularjs
+# Na pasta todomvc/examples/angular
 ng serve --port 8080
 ```
 
