@@ -1,7 +1,12 @@
-const elements = require('../elements/telaInicial.elements')
+const elements = require('../elements/telaInicial.elements').elements
 
 class TelaInicial {
+    // Métodos
+    textCenter() {
+        cy.get(elements.textCenter).should('contain', 'Todos');
+    }
 
 }
 
-export default new telaInicial();
+// Exporta a CLASSE TelaInicial como default
+export default TelaInicial;
