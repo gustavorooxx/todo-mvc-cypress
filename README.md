@@ -190,7 +190,3 @@ Para executar os testes:
 
     Isso executará todos os seus testes no terminal sem abrir a interface gráfica, útil para ambientes de Integração Contínua (CI/CD).
 
------
-
-```
-```
