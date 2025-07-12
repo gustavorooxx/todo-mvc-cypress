@@ -14,7 +14,7 @@ describe('Concluindo Itens no TodoMVC', () => {
     });
 
     //Testes
-    it('concluindo itens adicionados', () => {
+    it('concluindo itens adicionados e validando marcação', () => {
         // Criando array para armazenar os itens que serão inputados
         const itensInputados = [];
         for (let i = 0; i <= 6; i++) {
