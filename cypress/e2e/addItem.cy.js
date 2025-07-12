@@ -22,7 +22,6 @@ describe('Adicionando Itens no TodoMVC', () => {
     it('adicionando mais de um item e valida nome do item', () => {
         // Criando array para armazenar os itens que serão inputados
         const itensInputados = [];
-
         for (let i = 0; i <= 6; i++) {
             // gerando nome do item e adicionando no array
             const item = `item${i}`;

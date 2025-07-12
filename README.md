@@ -28,7 +28,7 @@ O projeto TodoMVC original não mantém todas as implementações no repositóri
 git clone [https://github.com/tastejs/todomvc.git](https://github.com/tastejs/todomvc.git)
 
 # Navegue para a pasta da implementação Angular
-cd todomvc/examples/angularjs
+cd todomvc/examples/angular
 ````
 
 ### 2\. Instalar Dependências do Projeto TodoMVC (Angular)
@@ -46,7 +46,7 @@ yarn install
 Para rodar os testes Cypress, a aplicação Angular precisa estar em execução. Vamos iniciá-la na porta 8080.
 
 ```bash
-# Na pasta todomvc/examples/angularjs
+# Na pasta todomvc/examples/angular
 ng serve --port 8080
 ```
 
