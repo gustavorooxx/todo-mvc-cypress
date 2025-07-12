@@ -9,14 +9,14 @@ class TelaInicial {
         cy.get(elements.inputDados).type(item + '{enter}')
     }
     concluirItem(){
-         cy.get('app-todo-item').each(($appTodoItem, index) => {
+         cy.get(elements.todoListItem).each(($appTodoItem, index) => {
             cy.wrap($appTodoItem)
             .find('.toggle')
             .check();
             });
     }
     validaItemMarcado(){
-        cy.get('app-todo-item').each(($appTodoItem, index) => {
+        cy.get(elements.todoListItem).each(($appTodoItem, index) => {
         cy.wrap($appTodoItem).find('.toggle').should('be.checked');
          });
     }
