@@ -5,6 +5,13 @@ class TelaInicial {
     textCenter() {
         cy.get(elements.textCenter).should('contain', 'Todos');
     }
+    inputItem(item) {
+        cy.get(elements.inputDados).type(item + '{enter}')
+    }
+    validaItem(){
+        
+    }
+
 
 }
 

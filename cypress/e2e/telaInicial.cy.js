@@ -1,5 +1,3 @@
-// cypress/e2e/telainicial.cy.js
-
 // Importa a CLASSE TelaInicial do seu Page Object
 import TelaInicial from '../support/pageObjects/telaInicial.page'; // Verifique o caminho correto
 
