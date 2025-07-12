@@ -8,15 +8,14 @@ describe('Adicionando Itens no TodoMVC', () => {
         cy.visit('/');
         // // Instancia o Page Object antes de cada teste
         telaInicial = new TelaInicial();
-
         it('valida texto central da tela', () => {
             telaInicial.textCenter();
         });
     });
 
+    //Testes
     it('adicionando apenas um item', () => {
         telaInicial.inputItem("dado1");
-
     });
 
     it('adicionando mais de um item e valida nome do item', () => {

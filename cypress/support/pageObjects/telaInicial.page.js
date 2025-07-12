@@ -8,8 +8,17 @@ class TelaInicial {
     inputItem(item) {
         cy.get(elements.inputDados).type(item + '{enter}')
     }
-    validaItem(){
-        
+    concluirItem(){
+         cy.get('app-todo-item').each(($appTodoItem, index) => {
+            cy.wrap($appTodoItem)
+            .find('.toggle')
+            .check();
+            });
+    }
+    validaItemMarcado(){
+        cy.get('app-todo-item').each(($appTodoItem, index) => {
+        cy.wrap($appTodoItem).find('.toggle').should('be.checked');
+         });
     }
 
 
