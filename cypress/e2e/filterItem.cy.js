@@ -1,7 +1,7 @@
 // Importa a CLASSE TelaInicial do seu Page Object
 import TelaInicial from '../support/pageObjects/telaInicial.page'; // Verifique o caminho correto
 
-describe('Concluindo Primeiro e Ultimo Item no TodoMVC', () => {
+describe('Filtrando Itens no TodoMVC', () => {
     // Cria uma instância do Page Object para ser usada em cada teste
     let telaInicial;
     beforeEach(() => {
@@ -11,7 +11,6 @@ describe('Concluindo Primeiro e Ultimo Item no TodoMVC', () => {
         it('valida texto central da tela', () => {
             telaInicial.textCenter();
         });
-
         // Criando array para armazenar os itens que serão inputados
         const itensInputados = [];
         for (let i = 0; i <= 6; i++) {
@@ -21,16 +20,23 @@ describe('Concluindo Primeiro e Ultimo Item no TodoMVC', () => {
             // inputando o item
             telaInicial.inputItem(item);
         }
+        telaInicial.conlcuirPrimeiroItem();
+        telaInicial.conlcuirUltimoItem();
     });
 
     //Testes
-    it('concluindo e validando primeiro item da lista', () => {
-        telaInicial.conlcuirPrimeiroItem();
+    it('filtrar itens completos', () => {
+        telaInicial.filtraItemCompleto();
     });
 
-    it('concluindo e validando ultimo item da lista', () => {
-        telaInicial.conlcuirUltimoItem();
+    it('filtrar itens ativos', () => {
+        telaInicial.filtraItemAtivo();
     });
+
+    it('filtrando todos os itens', () => {
+        telaInicial.filtraTodosOsItens();
+    });
+
 
 });
 

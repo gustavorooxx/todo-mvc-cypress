@@ -11,10 +11,6 @@ describe('Concluindo Itens no TodoMVC', () => {
         it('valida texto central da tela', () => {
             telaInicial.textCenter();
         });
-    });
-
-    //Testes
-    it('concluindo itens adicionados e validando marcação', () => {
         // Criando array para armazenar os itens que serão inputados
         const itensInputados = [];
         for (let i = 0; i <= 6; i++) {
@@ -24,6 +20,10 @@ describe('Concluindo Itens no TodoMVC', () => {
             // inputando o item
             telaInicial.inputItem(item);
         }
+    });
+
+    //Testes
+    it('concluindo itens adicionados e validando marcação', () => {
         telaInicial.concluirItens();
         telaInicial.validaItemMarcadoeCompleto();
     });
