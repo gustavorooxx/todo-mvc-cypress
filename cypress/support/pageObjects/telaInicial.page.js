@@ -75,7 +75,7 @@ class TelaInicial {
             "item2",
             "item3",
             "item4",
-            "item5", 
+            "item5",
             "item6",
         ];
         cy.get(elements.todoListItem).each(($appTodoItem, index) => {
@@ -88,6 +88,17 @@ class TelaInicial {
             });
         });
     }
+
+    deletarPrimeiroItem() {
+        cy.get(elements.todoListItem)
+            .first()
+            .find('.destroy')
+            .invoke('show') // faz o botão ser exibido (mouseover)
+            .click()
+        cy.contains(elements.todoListItem, 'item0')
+            .should('not.exist');
+    }
+
 
 }
 
